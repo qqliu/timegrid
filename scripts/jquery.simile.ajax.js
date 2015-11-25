@@ -314,8 +314,6 @@ jQuery.extend({
                     // don't have to do all the testing over again
                     // on subsequent calls.
                     return f;
-                    
-                    return o;
                 } catch (e) {
                     // silent
                 }
