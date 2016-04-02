@@ -217,7 +217,7 @@ Timegrid.Layout.prototype.render = function(container) {
     this._viewDiv.append(xLabels).append(yLabels);
     
     if (!this.mini) {
-        if ($.browser.msie) {
+        if (navigator.appVersion.indexOf("MSIE") !== -1) {
             $('.timegrid-view:visible .timegrid-rounded-shadow', 
               this._container).prettybox(4,0,0,1);
         } else {
@@ -237,7 +237,7 @@ Timegrid.Layout.prototype.renderChanged = function() {
     this.renderXLabels();
     this.renderYLabels();
     if (!this.mini) {
-        if ($.browser.msie) {
+        if (navigator.appVersion.indexOf("MSIE") !== -1) {
             $('.timegrid-view:visible .timegrid-rounded-shadow', 
               this._container).prettybox(4,0,0,1);
         } else {

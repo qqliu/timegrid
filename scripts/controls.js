@@ -80,7 +80,7 @@ Timegrid.Controls.TabSet.prototype.render = function(container) {
         tabDiv.prepend($tab);
         this._tabs[lTitle] = $tab;
     }
-    if (!$.browser.msie) { $('.timegrid-tab').corner("30px top"); }
+    if (navigator.appVersion.indexOf("MSIE") == -1) { $('.timegrid-tab').corner("30px top"); }
 };
 
 Timegrid.Controls.TabSet.prototype.renderChanged = function() {
